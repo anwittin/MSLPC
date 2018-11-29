@@ -1,4 +1,5 @@
-import datetime, decimal
+import decimal
+from datetime import datetime
 # Calculator functions
 
 # TODO: Create a calculator for daily compound interest 
@@ -11,12 +12,13 @@ import datetime, decimal
 
 r = float(input("Interest Rate: "))
 p = int(input("Loan Amount(current ammount): "))
-t1 = int(input("Date of last payment (as mm/dd/yyyy)"))
-t2 = todays date
+d1 = input("Date of last payment (as mm/dd/yy)")
+
 n = float(365.25)
 # Calculate the interest rate in decimal form
 interest = Decimal(r)/100
-days = t2 - t1
+
+days = datetime.now() - datetime.strptime(d1, "%m/%d/%y")
 #TODO: Figure out how to calculate the days from the input (Previous payment - current date)
 time_invested = days/365 
 # Calculate for daily interest
