@@ -11,16 +11,32 @@ from datetime import datetime
 # t = The time in years
 
 r = float(input("Interest Rate: "))
-p = int(input("Loan Amount(current ammount): "))
+p = float(input("Loan Amount(current ammount): "))
 d1 = input("Date of last payment (as mm/dd/yy)")
 
-n = float(365.25)
+n = float(365)
 # Calculate the interest rate in decimal form
-interest = Decimal(r)/100
+interest = decimal.Decimal(r)/100
 
 days = datetime.now() - datetime.strptime(d1, "%m/%d/%y")
 #TODO: Figure out how to calculate the days from the input (Previous payment - current date)
 time_invested = days/365 
 # Calculate for daily interest
-P(1 + (interest/365))**(365*time_invested)
+
+#P(1 + (interest/365))**(365*time_invested)
+
+class Loan:
+    """Daily compounding interest for a loan."""
+    def __init__(self, interest_rate, loan_value, last_payment_date, compound='daily'):
+        """Initialize the loan
+        Arguments:
+        interest_rate as a float
+        loan_value as"""
+        self.interest_rate = interest_rate/100
+        self.loan_value = loan_value
+        self.last_payment_date = last_payment_date
+        if compound == 'daily':
+            self.compound_period = 365
+    
+
 
