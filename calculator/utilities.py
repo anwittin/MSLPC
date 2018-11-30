@@ -32,7 +32,7 @@ class Loan:
         Arguments:
         interest_rate as a float
         loan_value as"""
-        self.interest_rate = interest_rate/100
+        self.interest_rate = decimal.Decimal(interest_rate)/100
         self.loan_value = loan_value
         self.last_payment_date = last_payment_date
         if compound == 'daily':
