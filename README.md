@@ -26,6 +26,8 @@ budget. Also a place to enter any extra payments you may want to enter.
 
 ![Payment information](https://github.com/anwittin/MSLPC/blob/master/images/Payment%20Information.PNG)
 
+----
+
 ### Payment Progress & Goals
 A widget that shows what you payment goals look like and your progress towards those goals.
 
@@ -33,4 +35,6 @@ A widget that shows what you payment goals look like and your progress towards t
 
 ![Payment Progress](https://github.com/anwittin/MSLPC/blob/master/images/Payoff%20progress%20%26%20goals.PNG)
 
+----
 
+### More to come as I build this out
