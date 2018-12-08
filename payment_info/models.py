@@ -15,7 +15,7 @@ class PaymentInfo(models.Model):
                                 decimal_places=2,
                                 default_currency='USD')
     
-class PaymentGoals(models.Model):
+class PaymentGoal(models.Model):
     year_goal = models.DateField("Yearly Goal")
     loan_start = MoneyField("Period Loan Amount", 
                                 max_digits=10,
