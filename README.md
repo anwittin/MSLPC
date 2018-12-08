@@ -21,12 +21,16 @@ My initial though on this app is to break it out in to small app pieces. Here ar
 ### Payment Information
 A simple area that will describe what your monthly payment looks like and how much you should 
 budget. Also a place to enter any extra payments you may want to enter.
+
 ----
+
 ![Payment information](https://github.com/anwittin/MSLPC/blob/master/images/Payment%20Information.PNG)
 
 ### Payment Progress & Goals
 A widget that shows what you payment goals look like and your progress towards those goals.
+
 ----
+
 ![Payment Progress](https://github.com/anwittin/MSLPC/blob/master/images/Payoff%20progress%20%26%20goals.PNG)
 
 
