@@ -17,15 +17,15 @@ class PaymentInfo(models.Model):
     
 class PaymentGoals(models.Model):
     year_goal = models.DateField("Yearly Goal")
-    loan_start = MoneyField("Period Loan Amount" 
+    loan_start = MoneyField("Period Loan Amount", 
                                 max_digits=10,
                                 decimal_places=2,
                                 default_currency='USD')
-    goal_amount = MoneyField("Goal Amount" 
+    goal_amount = MoneyField("Goal Amount", 
                                 max_digits=10,
                                 decimal_places=2,
                                 default_currency='USD')
-    current_progress = MoneyField("Current Contribution" 
+    current_progress = MoneyField("Current Contribution",
                                 max_digits=10,
                                 decimal_places=2,
                                 default_currency='USD')

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     # My apps
     'calculator.apps.CalculatorConfig',
+    'payment_info.apps.PaymentInfoConfig',
     # 3rd party apps
     'djmoney',
     'allauth',
