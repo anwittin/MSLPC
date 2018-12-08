@@ -7,4 +7,4 @@ on paying off student loans.
 ## Initial Buildout
 
 The first step in building this out is creating a Django project 
-![My Student Loan Payment Calc]()
+![My Student Loan Payment Calc](https://github.com/anwittin/MSLPC/blob/master/images/Student%20Loan%20Calc%20Main%20Image.PNG)
