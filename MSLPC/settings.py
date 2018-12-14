@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # My apps
     'calculator.apps.CalculatorConfig',
     'payment_info.apps.PaymentInfoConfig',
+    'loan_info',
     # 3rd party apps
     'djmoney',
     'allauth',
