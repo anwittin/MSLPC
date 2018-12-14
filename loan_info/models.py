@@ -5,9 +5,15 @@ from djmoney.models.fields import MoneyField
 
 class LoanDetail(models.Model):
     loan_name               = models.CharField(max_length=50)
-    loan_intrest_rate       = models.DecimalField(max_digits=5, decimal_places=4)
-    loan_payment            = MoneyField(max_digits=9, decimal_places=2)
-    loan_current_balance    = MoneyField(max_digits=9, decimal_places=2)
+    loan_intrest_rate       = models.DecimalField(max_digits=5, decimal_places=2)
+    loan_payment            = MoneyField("Payment Amount", 
+                                max_digits=10, 
+                                decimal_places=2, 
+                                default_currency='USD')
+    loan_current_balance    = MoneyField("Current Loan Balance",
+                                max_digits=10, 
+                                decimal_places=2,
+                                default_currency='USD')
 
 
     def __str__(self):
