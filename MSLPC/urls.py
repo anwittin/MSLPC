@@ -18,6 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('calc/', include('calculator.urls')),
+    path('loan/', include('loan_info.urls')),
     # TODO: Setup allauth views, forms and models.
     path('accounts/', include('allauth.urls')),
     path('admin/', admin.site.urls),

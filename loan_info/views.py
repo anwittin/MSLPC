@@ -9,7 +9,7 @@ def loan_create_view(request):
     form = LoanDetailForm(request.POST or None)
     if form.is_valid():
         form.save()
-        form = LoanDetailForm
+        form = LoanDetailForm()
     context = {
         'form': form
     }
