@@ -1,7 +1,39 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
 <h1>{{ object.loan_name }}</h1>
 <p>Loan payment: {{ object.loan_payment }}</p>
 <p>Loan Interest Rate: {{ object.loan_intrest_rate }}%</p>
+<table style="width:100">
+    <caption>Loan Details</caption>
+    <tr>
+      <th>Loan Name</th>
+      <th>Interest Rate</th> 
+      <th>Loan Payment</th>
+      <th>Current Balance</th>
+    </tr>
+    <tr>
+      <td>{{ object.loan_name }}</td>
+      <td>{{ object.loan_intrest_rate }} %</td>
+      <td>{{ object.loan_payment }}</td>
+      <td>{{ object.loan_current_balance }}</td>
+    </tr>
+   </table>
 {% endblock %}
