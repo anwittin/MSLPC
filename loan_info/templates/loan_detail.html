@@ -27,13 +27,17 @@
       <th>Loan Name</th>
       <th>Interest Rate</th> 
       <th>Loan Payment</th>
+      <th>Previous Balance</th>
       <th>Current Balance</th>
+      <th>Monthly Interest</th>
     </tr>
     <tr>
       <td>{{ object.loan_name }}</td>
-      <td>{{ object.loan_intrest_rate }} %</td>
+      <td>{{ object.loan_interest_rate }} %</td>
       <td>{{ object.loan_payment }}</td>
+      <td>{{ object.previous_balance }}</td>
       <td>{{ object.loan_current_balance }}</td>
+      <td>{{ object.interest_monthly }}</td>
     </tr>
    </table>
 {% endblock %}

@@ -5,7 +5,7 @@ from djmoney.models.fields import MoneyField
 
 class LoanDetail(models.Model):
     loan_name               = models.CharField(max_length=50)
-    loan_intrest_rate       = models.DecimalField(max_digits=5, decimal_places=2)
+    loan_interest_rate       = models.DecimalField(max_digits=5, decimal_places=2)
     loan_payment            = MoneyField("Payment Amount", 
                                 max_digits=10, 
                                 decimal_places=2, 
@@ -13,6 +13,14 @@ class LoanDetail(models.Model):
     loan_current_balance    = MoneyField("Current Loan Balance",
                                 max_digits=10, 
                                 decimal_places=2,
+                                default_currency='USD')
+    previous_balance    = MoneyField("Previous Balance",
+                                max_digits=10, 
+                                decimal_places=2,
+                                default_currency='USD')
+    interest_monthly            = MoneyField("Monthly Interest", 
+                                max_digits=10, 
+                                decimal_places=2, 
                                 default_currency='USD')
 
 
